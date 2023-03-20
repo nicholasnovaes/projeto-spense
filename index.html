@@ -8,17 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Spense Landing Page</title>
 </head>
 <body>
 
     <aside class="info contain">
-        <p>To celebrate Spense's launch, we will be waiving all fees for the entire month of April. <span>You will be reciving 100% of the earnings.</span></p>
+        <p>&#127881</p><p>To celebrate Spense's launch, we will be waiving all fees for the entire month of April. <span>You will be reciving 100% of the earnings.</span></p><p>&#127881</p>
     </aside>
 
     <header class="header contain">
         <a href="#" class="name-link contain">spense.</a>
-        <img src="icons/Hamburger Menu.svg" alt="Menu" class="icon-menu" onclick="clickMenu()">
+        <img src="icons/Hamburger Menu.svg" alt="Menu" id="hamburger" class="icon-menu" onclick="clickMenu()">
         <nav id="nav">
             <ul class="menu-nav" id="menu">
                 <li><a href="#">Business</a></li>
@@ -30,22 +31,24 @@
         </nav>
     </header>
 
-    <main class="contain">
+    
         <section class="sec1">
             <div class="sec1-text">
+                <div class="sec1-img">
+                    <img src="images/Hero Image (Mobile).png" alt="Hero image" class="sec-img">
+                </div>
                 <h1>Share your unfiltered thoughts. Get paid.</h1>
                 <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <span>just</span> that</p>
-                <img src="icons/Checkmark.svg" alt="checkmark"><p>Recive 99% off the earnings.</p>
-                <img src="icons/Checkmark.svg" alt="checkmark"><p>Get paid via Debit Card, ACH, or PayPal.</p>
-                <img src="icons/Checkmark.svg" alt="checkmark"><p>Withdraw your earnings anytime.</p>
+                <span class="benefits"><img src="icons/Checkmark.svg" alt="checkmark" class="checkmark"><p>Recive 99% off the earnings.</p></span>
+                <span class="benefits"><img src="icons/Checkmark.svg" alt="checkmark" class="checkmark"><p>Get paid via Debit Card, ACH, or PayPal.</p></span>
+                <span class="benefits"><img src="icons/Checkmark.svg" alt="checkmark" class="checkmark"><p>Withdraw your earnings anytime.</p></span>
+                <input type="email" placeholder="john@example.com" class="email">
+                <button class="btn btn-sec">Get Started</button>
             </div>
 
-            <div>
-                <img src="images/Hero Image (Mobile).png" alt="Hero image" class="sec-img">
-            </div>
         </section>
-
-        <div>
+        <main class="contain">
+        <div class="logos">
             <img src="logos/Facebook Logo.png" alt="Facebook">
             <img src="logos/Dribbble Logo.png" alt="Dribbble">
             <img src="logos/Youtube Logo.png" alt="Youtube">
@@ -56,59 +59,65 @@
             <img src="logos/Slack Logo.png" alt="Slack">
         </div>
 
-        <section>
+        <section class="sec2">
             <div>
-                <h2>Secure your money with Escrow.</h2>
+                <h1>Secure your money with Escrow.</h1>
                 <p>Spense uses Escrow to secure all payments. We belive Escrow offers the highest level of security for yoyr payments,so you never need to worry about scams.
                 </p>
 
-                <a href="#">Learn more about Escrow</a>
+                <a href="#" class="learn">Learn more about Escrow</a><span class="material-symbols-outlined">
+                    arrow_forward
+                    </span>
 
-                <div>
-                    <img src="images/Phone Mockup (Mobile).png" alt="Phone">
+                <div class="sec2-img">
+                    <img src="images/Phone Mockup (Mobile).png" alt="Phone" >
                 </div>
             </div>
         </section>
 
         <section>
             <div>
-                <h2>A text editor like no other.</h2>
+                <h1>A text editor like no other.</h1>
                 <p>Our text editor pulls you into focus mode with it's simplistic design and usabillity so you can put out your best writings.</p>
 
-                <a href="#">Text Editor Live Demo</a>
+                <a href="#" class="learn">Text Editor Live Demo</a><span class="material-symbols-outlined">
+                    arrow_forward
+                    </span>
 
                 <div>
-                    <img src="#" alt="Text editor">
+                    <img src="images/Text Editor.png" alt="Text editor" class="editor-img">
                 </div>
             </div>
         </section>
     </main>
-        <footer class="contain">
-            <p>spense</p>
-            <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <span>just</span> that</p>
+        <footer>
+            <div class="footer-text">
+                <a href="#" class="name-link-footer contain">spense.</a>
+                <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <span>just</span> that</p>
+            </div>
 
-            <ul>
-                <li>Company</li>
-                <li>About</li>
-                <li>Customers</li>
-                <li>Blog</li>
-            </ul>
-
-            <ul>
-                <li>Opportunities</li>
-            </ul>
-
-            <ul>
-                <li>SiteMap</li>
-                <li>Homepage</li>
-            </ul>
-
-            <ul>
-                <li>Resources</li>
-                <p>Support</p>
-                <p>Contact</p>
-                <p>FAQ</p>
-            </ul>
+            <div class="footer-nav">
+                <ul>
+                    <li>Company</li>
+                    <li>About</li>
+                    <li>Customers</li>
+                    <li>Blog</li>
+                </ul>
+                <ul>
+                    <li>Opportunities</li>
+                    <li>Jobs</li>
+                </ul>
+                <ul>
+                    <li>SiteMap</li>
+                    <li>Homepage</li>
+                </ul>
+                <ul>
+                    <li>Resources</li>
+                    <li>Support</li>
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
         
         </footer>
 
