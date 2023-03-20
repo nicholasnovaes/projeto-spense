@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <title>Spense Landing Page</title>
 </head>
 <body>
 
-    <aside>
+    <aside class="info contain">
         <p>To celebrate Spense's launch, we will be waiving all fees for the entire month of April. <span>You will be reciving 100% of the earnings.</span></p>
     </aside>
 
-    <header>
-        spense.
+    <header class="header contain">
+        <a href="#" class="name-link contain">spense.</a>
+        <img src="icons/Hamburger Menu.svg" alt="Menu" class="icon-menu" onclick="openMenu()">
         <nav>
-            <ul>
-                <li>Business</li>
-                <li>Pricing</li>
-                <li>Features</li>
-                <li>Login</li>
-                <button>Get Started</button>
+            <ul class="menu-nav" id="menu">
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Pricing</a> </li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Login</a></li>
+                <button class="btn">Get Started</button>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="contain">
+        <section class="sec1">
             <div class="sec1-text">
                 <h1>Share your unfiltered thoughts. Get paid.</h1>
                 <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <span>just</span> that</p>
@@ -36,7 +41,7 @@
             </div>
 
             <div>
-                <img src="images/Hero Image (Mobile).png" alt="Hero image">
+                <img src="images/Hero Image (Mobile).png" alt="Hero image" class="sec-img">
             </div>
         </section>
 
@@ -73,12 +78,12 @@
                 <a href="#">Text Editor Live Demo</a>
 
                 <div>
-                    <img src="images/Text Editor.png" alt="Text editor">
+                    <img src="#" alt="Text editor">
                 </div>
             </div>
         </section>
-
-        <footer>
+    </main>
+        <footer class="contain">
             <p>spense</p>
             <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <span>just</span> that</p>
 
@@ -104,12 +109,21 @@
                 <p>Contact</p>
                 <p>FAQ</p>
             </ul>
+        
         </footer>
 
 
+        <script>
 
+            function openMenu(){
+                if(menu.style.display == 'block'){
+                    menu.style.display = 'none'
+                }else{
+                    menu.style.display = 'block'
+                }
+            }
+        </script>
 
-    </main>
     
 </body>
 </html>
