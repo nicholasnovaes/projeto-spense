@@ -26,7 +26,7 @@
                 <li><a href="#">Pricing</a> </li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Login</a></li>
-                <button class="btn">Get Started</button>
+                <button class="btn btn-header">Get Started</button>
             </ul>
         </nav>
     </header>
@@ -35,15 +35,21 @@
         <section class="sec1">
             <div class="sec1-text">
                 <div class="sec1-img">
-                    <img src="images/Hero Image (Mobile).png" alt="Hero image" class="sec-img">
+                    <picture>
+                        <source media="(max-width:767px )" srcset="images/hero-mobile.png">
+                        <source media="(max-width:1024px )" srcset="images/hero-tablet.png">
+                        <img src="images/hero-desktop.png" alt="desktop" class="sec-img">
+                    </picture>
                 </div>
-                <h1>Share your unfiltered thoughts. Get paid.</h1>
-                <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <span>just</span> that</p>
-                <span class="benefits"><img src="icons/Checkmark.svg" alt="checkmark" class="checkmark"><p>Recive 99% off the earnings.</p></span>
-                <span class="benefits"><img src="icons/Checkmark.svg" alt="checkmark" class="checkmark"><p>Get paid via Debit Card, ACH, or PayPal.</p></span>
-                <span class="benefits"><img src="icons/Checkmark.svg" alt="checkmark" class="checkmark"><p>Withdraw your earnings anytime.</p></span>
-                <input type="email" placeholder="john@example.com" class="email">
-                <button class="btn btn-sec">Get Started</button>
+                <div class="sec1-info">
+                    <h1>Share your unfiltered thoughts. Get paid.</h1>
+                    <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <span>just</span> that</p>
+                    <span class="benefits"><img src="icons/Checkmark.svg" alt="checkmark" class="checkmark"><p>Recive 99% off the earnings.</p></span>
+                    <span class="benefits"><img src="icons/Checkmark.svg" alt="checkmark" class="checkmark"><p>Get paid via Debit Card, ACH, or PayPal.</p></span>
+                    <span class="benefits"><img src="icons/Checkmark.svg" alt="checkmark" class="checkmark"><p>Withdraw your earnings anytime.</p></span>
+                    <input type="email" placeholder="john@example.com" class="email">
+                    <button class="btn btn-sec">Get Started</button>
+                </div>
             </div>
 
         </section>
@@ -60,19 +66,22 @@
         </div>
 
         <section class="sec2">
-            <div>
-                <h1>Secure your money with Escrow.</h1>
-                <p>Spense uses Escrow to secure all payments. We belive Escrow offers the highest level of security for yoyr payments,so you never need to worry about scams.
-                </p>
-
-                <a href="#" class="learn">Learn more about Escrow</a><span class="material-symbols-outlined">
-                    arrow_forward
-                    </span>
+                <div class="sec2-text">
+                    <h1>Secure your money with Escrow.</h1>
+                    <p>Spense uses Escrow to secure all payments. We belive Escrow offers the highest level of security for yoyr payments,so you never need to worry about scams.
+                    </p>
+                    <a href="#" class="learn">Learn more about Escrow</a><span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                </div>
 
                 <div class="sec2-img">
-                    <img src="images/Phone Mockup (Mobile).png" alt="Phone" >
+                    <picture>
+                        <source media="(max-width:767px)" srcset="images/phone-mobile.png">
+                        <source media="(max-width:1023px)" srcset="images/phone-tablet.png">
+                        <img src="images/phone-desktop.png" alt="Phone" class="sec-img img-desk">
+                    </picture>
                 </div>
-            </div>
         </section>
 
         <section>
